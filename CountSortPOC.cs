@@ -8,7 +8,7 @@ namespace DataStructure
 {
     public class CountSortPOC
     {
-        private static void sortbyFreq(int[] arr)
+        public static void sortbyFreq(int[] arr)
         {
             int[] freq = new int[5];
             for (int i = 0; i < arr.Length; i++)
@@ -24,13 +24,6 @@ namespace DataStructure
                 }
             }
         }
-
-        /*static void Main(string[] args)
-        {
-            int[] arr = { 3, 1, 4, 4, 2, 4, 2, 3, 1, 2 };
-            sortbyFreq(arr);
-            Console.WriteLine();
-        }*/
 
     }
 }
