@@ -69,6 +69,18 @@ namespace DataStructure
             BinaryTreeTraversals.postorder(root);
             Console.WriteLine();
 
+            //Mirror Tree
+            root = new Node(5);
+            root.left = new Node(3);
+            root.right = new Node(6);
+            root.left.left = new Node(2);
+            root.left.right = new Node(4);
+            MirrorTree.inorderTraversal(root);
+            Console.WriteLine();
+            Console.WriteLine("Mirror tree using inorder traversal:-");
+            Node mirrorImageTree = MirrorTree.mirrorTree(root);
+            MirrorTree.inorderTraversal(mirrorImageTree);
+
         }
     }
 
