@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructure.tree;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,11 +62,11 @@ namespace DataStructure
             root.right.right = new Node(7);
             Console.WriteLine("BinaryTreeTraversal:-");
             Console.WriteLine("Preorder traversal:");
-            BinaryTreeTraversal.preorder(root);
+            BinaryTreeTraversals.preorder(root);
             Console.WriteLine("Inorder traversal:");
-            BinaryTreeTraversal.inorder(root);
+            BinaryTreeTraversals.inorder(root);
             Console.WriteLine("Postorder traversal:");
-            BinaryTreeTraversal.postorder(root);
+            BinaryTreeTraversals.postorder(root);
             Console.WriteLine();
 
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructure
+namespace DataStructure.tree
 {
     public class Node
     {
@@ -18,7 +18,7 @@ namespace DataStructure
         }
     }
 
-    public class BinaryTreeTraversal
+    public class BinaryTreeTraversals
     {
         public static void preorder(Node root)
         {
