@@ -80,10 +80,17 @@ namespace DataStructure
             Console.WriteLine("Mirror tree using inorder traversal:-");
             Node mirrorImageTree = MirrorTree.mirrorTree(root);
             MirrorTree.inorderTraversal(mirrorImageTree);
+            Console.WriteLine();
 
             //SizeOfTree
             int treeSize = SizeOfTree.treeSize(root);
             Console.WriteLine("Tree size is: " + treeSize);
+            Console.WriteLine();
+
+            //HeightOfTree
+            int treeHeight = HeightOfTree.treeHeight(root);
+            Console.WriteLine("Tree height is: " + treeHeight);
+            Console.WriteLine();
 
         }
     }
