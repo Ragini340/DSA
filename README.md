@@ -2,6 +2,7 @@
 -tree
 --Binary Tree Traversal
 --Mirror Tree
+--Size of tree
 -Array POC
 -Count Sort
 -Driver class
