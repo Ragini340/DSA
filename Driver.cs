@@ -81,6 +81,10 @@ namespace DataStructure
             Node mirrorImageTree = MirrorTree.mirrorTree(root);
             MirrorTree.inorderTraversal(mirrorImageTree);
 
+            //SizeOfTree
+            int treeSize = SizeOfTree.treeSize(root);
+            Console.WriteLine("Tree size is: " + treeSize);
+
         }
     }
 
