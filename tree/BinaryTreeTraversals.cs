@@ -18,6 +18,8 @@ namespace DataStructure.tree
         }
     }
 
+    /*Time Complexity: O(N)
+    Auxiliary Space: If we do not consider the size of the stack for function calls then O(1) otherwise O(h) where h is the height of the tree.*/
     public class BinaryTreeTraversals
     {
         public static void preorder(Node root)

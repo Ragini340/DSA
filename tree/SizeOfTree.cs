@@ -8,6 +8,8 @@ namespace DataStructure.tree
 {
     public class SizeOfTree
     {
+        /*Time Complexity: O(n), where n is the number of nodes in binary tree.
+        Auxiliary Space: O(h), where h is the height of the tree.*/
         //Output:- Tree size is: 5
         public static int treeSize(Node root)
         {

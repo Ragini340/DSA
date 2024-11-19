@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataStructure.tree
 {
+    /*Time complexity: O(N),where N is the number of nodes in given binary tree.
+    Auxiliary Space: O(h), where h is the height of the tree.*/
     public class MirrorTree
     {
         public static Node mirrorTree(Node root)
