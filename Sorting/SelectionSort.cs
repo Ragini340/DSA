@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructure
+namespace DataStructure.Sorting
 {
     /*Time Complexity = O(n) * O(n) = O(n2)
     Space Complexity = O(1)
