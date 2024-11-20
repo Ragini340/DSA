@@ -6,6 +6,7 @@
 --Insertion Sort
 --Merge two sorted arrays
 --Selection sort
+--Binary Search Tree
 
 -tree
 --Binary Tree Traversal
