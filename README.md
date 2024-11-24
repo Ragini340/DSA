@@ -14,3 +14,6 @@
 --Mirror Tree
 --Size of tree
 --Height of tree
+
+-LinkedList
+--SingleLikedList
