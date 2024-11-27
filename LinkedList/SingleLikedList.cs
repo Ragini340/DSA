@@ -56,7 +56,6 @@ namespace DataStructure.Linkedlist
         }
 
         /*Case3: Insert node before a node
-         * 
         */
         public void insertNodeBeforeANode(int element, int item)
         {
@@ -88,6 +87,42 @@ namespace DataStructure.Linkedlist
                 if (!itemFound)
                 {
                     Console.WriteLine("Item is not available in LinkedList");
+                }
+            }
+        }
+
+        /*Case4: Insert node before last node
+       */
+        public void insertNodeAfterANode(int element, int item)
+        {
+            Node node = new Node(element);
+            Node last = head;
+            if(last == null)
+            {
+                Console.WriteLine("Empty LinkedList");
+            }
+            else if(last.data == item)
+            {
+                node.next = last.next;
+                last.next = node;
+            }
+            else
+            {
+                bool itemFound = false; 
+                while(last != null)
+                {
+                    if(last.data == item)
+                    {
+                        node.next = last.next;
+                        last.next = node;
+                        itemFound = true;
+                        break;
+                    }
+                    last = last.next;
+                }
+                if(!itemFound)
+                {
+                    Console.WriteLine("Item is unavailable");
                 }
             }
         }
