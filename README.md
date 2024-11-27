@@ -17,4 +17,8 @@
 
 -LinkedList
 --SingleLikedList
+-Case1: Insert node at beginning
+-Case2: Insert node at end
+-Case3: Insert node before a node
+-Case4: Insert node before last node
 --Driver Class
