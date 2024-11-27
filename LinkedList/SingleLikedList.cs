@@ -22,6 +22,10 @@ namespace DataStructure.Linkedlist
     {
         Node head;
 
+        /*Case1: Insert node at beginning
+         * Time Complexity: O(1)
+         * Space Complexity: O(1)
+        */
         public void inSertAtBeginning(int element)
         {
             Node node = new Node(element);
@@ -29,6 +33,10 @@ namespace DataStructure.Linkedlist
             head = node;
         }
 
+        /*Case2: Insert node at end
+         * Time Complexity: O(N)
+         * Space Complexity: O(1)
+        */
         public void insertNodeAtEnd(int element)
         {
             Node node = new Node(element);
@@ -47,6 +55,43 @@ namespace DataStructure.Linkedlist
             }
         }
 
+        /*Case3: Insert node before a node
+         * 
+        */
+        public void insertNodeBeforeANode(int element, int item)
+        {
+            Node node = new Node(element);
+            Node last = head;
+            if(last == null)
+            {
+                Console.WriteLine("Empty LinkedList");
+            }
+            else if (item == last.data)
+            {
+                node.next = last;
+                head = node;
+            }
+            else
+            {
+                bool itemFound = false;
+                while(last.next != null)
+                {
+                    if(last.next.data == item)
+                    {
+                        node.next = last.next;
+                        last.next = node;
+                        itemFound = true;
+                        break;
+                    }
+                    last = last.next;
+                }
+                if (!itemFound)
+                {
+                    Console.WriteLine("Item is not available in LinkedList");
+                }
+            }
+        }
+
         public void traversal()
         {
             Node tNode = head;
@@ -60,23 +105,6 @@ namespace DataStructure.Linkedlist
                 Console.WriteLine(tNode.data);
                 tNode = tNode.next;
             }
-        }
-
-        public static void Main(string[] args)
-        {
-            SingleLikedList singleLikedList = new SingleLikedList();
-            Console.WriteLine("Insert node at beginning: ");
-
-            for (int i = 0; i <= 5; i++)
-            {
-                singleLikedList.inSertAtBeginning(i);
-            }
-
-            singleLikedList.traversal();
-            Console.WriteLine();
-            Console.WriteLine("Insert node at end: ");
-            singleLikedList.insertNodeAtEnd(5);
-            singleLikedList.traversal();
         }
 
     }

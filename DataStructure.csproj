@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DataStructure.Linkedlist.SingleLikedList</StartupObject>
+    <StartupObject>DataStructure.LinkedList.DriverSingleLinkedList</StartupObject>
   </PropertyGroup>
 
 </Project>
