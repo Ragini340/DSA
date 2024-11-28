@@ -127,6 +127,42 @@ namespace DataStructure.Linkedlist
             }
         }
 
+        /*Case5: Reverse a LinkedList*/
+        public void reverseLinkedList()
+        {
+            Node temp = head;
+            printReverse(temp);
+        }
+
+        private void printReverse(Node temp)
+        {
+            if(temp == null)
+            {
+                return;
+            }
+            printReverse(temp.next);
+            Console.WriteLine(" " + temp.data);
+        }
+
+        public void reverse()
+        {
+            if(head == null)
+            {
+                return;
+            }
+            Node prev = null;
+            Node current = head;
+            Node temp = null;
+            while(current != null)
+            {
+                temp = current.next;
+                current.next = prev;
+                prev = current;
+                current = temp;
+            }
+            head = prev;
+        }
+
         public void traversal()
         {
             Node tNode = head;

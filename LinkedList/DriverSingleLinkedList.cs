@@ -38,6 +38,12 @@ namespace DataStructure.LinkedList
             singleLikedList.insertNodeBeforeANode(100, 6);
             singleLikedList.traversal();
             Console.WriteLine();
+
+            //Case5: Reverse a LinkedList
+            Console.WriteLine("Reverse the LinkedList");
+            singleLikedList.reverse();
+            singleLikedList.traversal();
+            Console.WriteLine();
         }
 
     }
