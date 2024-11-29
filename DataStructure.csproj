@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DataStructure.LinkedList.DriverSingleLinkedList</StartupObject>
+    <StartupObject>DataStructure.LinkedList.CheckIfLoopIsFoundInSingleLinkedList</StartupObject>
   </PropertyGroup>
 
 </Project>
