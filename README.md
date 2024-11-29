@@ -22,4 +22,8 @@
 -Case3: Insert node before a node
 -Case4: Insert node before last node
 -Case5: Reverse a LinkedList
---Driver Class
+
+--Driver Class of SingleLinkedList
+
+--CheckIfLoopIsFoundInSingleLinkedList
+-Case1: To check if there is a loop found in the list
