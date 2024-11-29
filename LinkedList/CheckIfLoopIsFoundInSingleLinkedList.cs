@@ -80,7 +80,7 @@ namespace DataStructure.LinkedList
             temp.next.next.next.next.next = new Node(94);
 
             Node temp1 = temp.next.next.next.next.next.next = new Node(400);
-            temp1.next = new Node(400);
+            temp1.next = new Node(401);
             temp1.next.next = new Node(200);
             temp1.next.next.next = new Node(213);
             temp1.next.next.next.next = new Node(100);
