@@ -29,7 +29,7 @@ namespace DataStructure.LinkedList
             return isCycle;
         }
 
-        /*Case2: To find start point point of a loop*/
+        /*Case2: To find start point of a loop*/
         public Node findStartPointOfALoop(Node head)
         {
             Node slow = head;
@@ -96,7 +96,7 @@ namespace DataStructure.LinkedList
             bool isLoopFound = checkIfLoopIsFoundInSingleLinkedList.findLoopInLinkedList(head);
             Console.WriteLine("Is loop found in list ?" + isLoopFound);
 
-            //Case2: To find start point point of a loop
+            //Case2: To find start point of a loop
             Node startLoop = checkIfLoopIsFoundInSingleLinkedList.findStartPointOfALoop(head);
             if (startLoop != null)
             {
