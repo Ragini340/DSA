@@ -80,17 +80,15 @@ namespace DataStructure.LinkedList
             temp.next.next.next.next.next = new Node(94);
 
             Node temp1 = temp.next.next.next.next.next.next = new Node(400);
-            temp1.next = new Node(401);
-            temp1.next.next = new Node(200);
-            temp1.next.next.next = new Node(213);
-            temp1.next.next.next.next = new Node(100);
-            temp1.next.next.next.next.next = new Node(500);
+            temp1.next = new Node(213);
+            temp1.next.next = new Node(100);
+            temp1.next.next.next = new Node(500);
+            temp1.next.next.next.next = new Node(250);
+            temp1.next.next.next.next.next = new Node(175);
 
-            Node temp2 = temp1.next.next.next.next.next.next = new Node(250);
-            temp2.next = new Node(75);
-            temp2.next.next = new Node(32);
-            temp2.next.next.next = temp.next.next.next.next;
-
+            Node temp2 = temp1.next.next.next.next.next.next = new Node(32);
+            temp2.next = temp.next.next.next.next;
+         
             //Case1: To check if there is a loop found in the single linked list
             CheckIfLoopIsFoundInSingleLinkedList checkIfLoopIsFoundInSingleLinkedList = new CheckIfLoopIsFoundInSingleLinkedList();
             bool isLoopFound = checkIfLoopIsFoundInSingleLinkedList.findLoopInLinkedList(head);
