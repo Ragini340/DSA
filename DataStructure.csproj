@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DataStructure.LinkedList.MergeTwoSortedLinkedLists</StartupObject>
+    <StartupObject>DataStructure.LinkedList.SortingOfSingleLinkedList</StartupObject>
   </PropertyGroup>
 
 </Project>
