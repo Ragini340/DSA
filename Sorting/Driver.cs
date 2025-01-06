@@ -29,7 +29,7 @@ namespace DataStructure.Sorting
             //CountSortPOC
             int[] countSortPOCArr = { 3, 1, 4, 4, 2, 4, 2, 3, 1, 2 };
             Console.WriteLine("CountSortPOC: ");
-            CountSortPOC.sortbyFreq(countSortPOCArr);
+            CountSortPOC.SortbyFreq(countSortPOCArr);
             Console.WriteLine();
 
             //MergeTwoSortedArrays
