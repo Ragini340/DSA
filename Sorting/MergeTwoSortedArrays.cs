@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.Sorting
+﻿namespace DataStructure.Sorting
 {
     public class MergeTwoSortedArrays
     {
+        /* Time Complexity: O(N + M)
+         * Space Complexity: O(1) beacause it took extra space for storing result in arr3 not for sorting the array.
+         */
         public static void mergeTwoSortedArray(int[] arr1, int[] arr2, int[] arr3)
         {
             int i = 0, j = 0, k = 0;
