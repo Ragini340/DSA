@@ -38,5 +38,19 @@
 
         }
 
+        public static void Main(string[] args)
+        {
+            int[] arr1 = { 2, 5, 7, 12, 20, 24, 29 };
+            int[] arr2 = { 6, 9, 12, 14, 15, 19 };
+            int[] arr3 = new int[arr1.Length + arr2.Length];
+
+            MergeTwoSortedArrays.mergeTwoSortedArray(arr1, arr2, arr3);
+            Console.WriteLine("Merged two sorted arrays's elements: ");
+            foreach (int sortedValue in arr3)
+            {
+                Console.Write(sortedValue + " ");
+            }
+        }
+
     }
 }

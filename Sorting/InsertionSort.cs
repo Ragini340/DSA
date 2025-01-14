@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.Sorting
+﻿namespace DataStructure.Sorting
 {
     public class InsertionSort
     {
@@ -24,8 +18,15 @@ namespace DataStructure.Sorting
             }
             for (int k = 0; k < arr.Length; k++)
             {
-                Console.WriteLine(arr[k] + " ");
+                Console.Write(arr[k] + " ");
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            int[] insertionSortArr = { 1, 3, 2, 6, 8, 10, 9, 5 };
+            Console.WriteLine("Insertion sorting: ");
+            InsertionSort.insertionSort(insertionSortArr);
         }
 
     }

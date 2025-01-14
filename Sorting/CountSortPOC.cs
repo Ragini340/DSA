@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.Sorting
+﻿namespace DataStructure.Sorting
 {
     public class CountSortPOC
     {
@@ -17,7 +11,7 @@ namespace DataStructure.Sorting
                 freq[index]++;
             }
             Console.WriteLine("Count sort in ascending order:-");
-            for (int i = 1; i <= 4; i++) 
+            for (int i = 1; i <= 4; i++)
             {
                 for (int j = 1; j <= freq[i]; j++)
                 {
@@ -25,14 +19,20 @@ namespace DataStructure.Sorting
                 }
             }
             Console.WriteLine();
-            Console.WriteLine("Count sort in decreasing order:-");
-            for (int i = 4; i >= 1; i--) 
+            Console.WriteLine("\nCount sort in decreasing order:-");
+            for (int i = 4; i >= 1; i--)
             {
                 for (int j = 1; j <= freq[i]; j++)
                 {
                     Console.Write(i + " ");
                 }
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            int[] countSortPOCArr = { 3, 1, 4, 4, 2, 4, 2, 3, 1, 2 };
+            CountSortPOC.SortbyFreq(countSortPOCArr);
         }
 
     }

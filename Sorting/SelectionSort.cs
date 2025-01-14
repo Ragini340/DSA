@@ -1,20 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.Sorting
+﻿namespace DataStructure.Sorting
 {
     /*Time Complexity = O(n) * O(n) = O(n2)
     Space Complexity = O(1)
-    Output:
-    -4
-    -1
-     1
-     2
-     3
-     5
+    Output: -4 -1 1 2 3 5
     */
     public class SelectionSort
     {
@@ -44,8 +32,16 @@ namespace DataStructure.Sorting
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(arr[i]);
+                Console.Write(arr[i] + " ");
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            int[] selectionSortArr = { 1, 5, -1, 2, 3, -4 };
+            SelectionSort.selectionSort(selectionSortArr);
+            Console.WriteLine("Selection sorting: ");
+            SelectionSort.printSortedArray(selectionSortArr);
         }
 
     }
