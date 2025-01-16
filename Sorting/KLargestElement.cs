@@ -10,19 +10,19 @@
         {
             for (int i = 0; i < B; i++)
             {
-                int min_index = i;
-                int min_element = A[i];
+                int max_index = i;
+                int max_element = A[i];
                 for (int j = i; j < A.Length; j++)
                 {
-                    if (A[j] > min_element)
+                    if (A[j] > max_element)
                     {
-                        min_element = A[j];
-                        min_index = j;
+                        max_element = A[j];
+                        max_index = j;
                     }
                 }
                 int temp = A[i];
-                A[i] = A[min_index];
-                A[min_index] = temp;
+                A[i] = A[max_index];
+                A[max_index] = temp;
             }
 
             return A[B - 1];
