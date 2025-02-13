@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataStructure.Linkedlist;
+﻿using DataStructure.Linkedlist;
 
 namespace DataStructure.LinkedList
 {
     public class MiddleElementOfSingleLinkedList
     {
-        public Node middleElementInLinkedList(Node head)
+        public Node MiddleElementInLinkedList(Node head)
         {
             Node slow = head;
             Node fast = head;
@@ -32,7 +27,7 @@ namespace DataStructure.LinkedList
             head.next.next.next.next.next = new Node(60);
 
             MiddleElementOfSingleLinkedList middleElementOfSingleLinkedList = new MiddleElementOfSingleLinkedList();
-            Node isMiddleElementFound = middleElementOfSingleLinkedList.middleElementInLinkedList(head);
+            Node isMiddleElementFound = middleElementOfSingleLinkedList.MiddleElementInLinkedList(head);
             Console.WriteLine("Middle element is: " + isMiddleElementFound.data);
         }
 

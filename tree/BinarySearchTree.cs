@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.tree
+﻿namespace DataStructure.tree
 {
     public class TreeNode
     {
@@ -28,7 +22,7 @@ namespace DataStructure.tree
         public static TreeNode SMALLEST_NODE;
 
         /*Find given element in BST, if element found return 1 else return 0.*/
-        public static int findNodeInBinaryTree(TreeNode node, int element)
+        public static int FindNodeInBinaryTree(TreeNode node, int element)
         {
             TreeNode temp = node;
             while (temp != null)
@@ -50,7 +44,7 @@ namespace DataStructure.tree
         }
 
         //Insert node in BST
-        public static void insertNodeInBinarySearchTree(TreeNode node, int element)
+        public static void InsertNodeInBinarySearchTree(TreeNode node, int element)
         {
             TreeNode temp = node;
             TreeNode parentNode = null; //Parent node for root node is null.
@@ -84,18 +78,18 @@ namespace DataStructure.tree
             }
 
             //Traversing BST after node insertion
-            inOrder(node);
+            InOrder(node);
         }
 
-        public static void inOrder(TreeNode root)
+        public static void InOrder(TreeNode root)
         {
             if (root == null)
             {
                 return;
             }
-            inOrder(root.left);
+            InOrder(root.left);
             Console.WriteLine("\t" + root.data);
-            inOrder(root.right);
+            InOrder(root.right);
         }
 
         public static void Main(string[] args)
@@ -111,7 +105,7 @@ namespace DataStructure.tree
             root.right.right.right = new TreeNode(17);
 
             //Finding node in BST
-            int elementFound = findNodeInBinaryTree(node: root, element: 13);
+            int elementFound = FindNodeInBinaryTree(node: root, element: 13);
             if (elementFound == 1)
             {
                 Console.WriteLine("Given element is found in Binary Search Tree");
@@ -122,7 +116,7 @@ namespace DataStructure.tree
             }
 
             //Insering node in BST
-            insertNodeInBinarySearchTree(node: root, element: 14);
+            InsertNodeInBinarySearchTree(node: root, element: 14);
         }
 
     }

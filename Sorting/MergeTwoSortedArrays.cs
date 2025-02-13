@@ -5,7 +5,7 @@
         /* Time Complexity: O(N + M)
          * Space Complexity: O(1) beacause it took extra space for storing result in arr3 not for sorting the array.
          */
-        public static void mergeTwoSortedArray(int[] arr1, int[] arr2, int[] arr3)
+        public static void MergeTwoSortedArray(int[] arr1, int[] arr2, int[] arr3)
         {
             int i = 0, j = 0, k = 0;
             int n1 = arr1.Length;
@@ -44,7 +44,7 @@
             int[] arr2 = { 6, 9, 12, 14, 15, 19 };
             int[] arr3 = new int[arr1.Length + arr2.Length];
 
-            MergeTwoSortedArrays.mergeTwoSortedArray(arr1, arr2, arr3);
+            MergeTwoSortedArrays.MergeTwoSortedArray(arr1, arr2, arr3);
             Console.WriteLine("Merged two sorted arrays's elements: ");
             foreach (int sortedValue in arr3)
             {

@@ -1,37 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.tree
+﻿namespace DataStructure.tree
 {
     /*Time complexity: O(N),where N is the number of nodes in given binary tree.
     Auxiliary Space: O(h), where h is the height of the tree.*/
     public class MirrorTree
     {
-        public static Node mirrorTree(Node root)
+        public static Node MirrorTrees(Node root)
         {
             if (root == null)
             {
                 return null;
             }
-            Node leftNode = mirrorTree(root.left);
-            Node rightNode = mirrorTree(root.right);
+            Node leftNode = MirrorTrees(root.left);
+            Node rightNode = MirrorTrees(root.right);
             root.left = rightNode;
             root.right = leftNode;
             return root;
         }
 
-        public static void inorderTraversal(Node root)
+        public static void InorderTraversal(Node root)
         {
             if (root == null)
             {
                 return;
             }
-            inorderTraversal(root.left);
+            InorderTraversal(root.left);
             Console.WriteLine(root.data + " ");
-            inorderTraversal(root.right);
+            InorderTraversal(root.right);
         }
 
     }

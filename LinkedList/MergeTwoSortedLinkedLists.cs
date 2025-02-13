@@ -1,16 +1,11 @@
 ﻿// Written by Ragini. All rights reserved. 
 using DataStructure.Linkedlist;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStructure.LinkedList
 {
     public class MergeTwoSortedLinkedLists
     {
-        public Node mergeTwoSortedNodes(Node node1, Node node2)
+        public Node MergeTwoSortedNodes(Node node1, Node node2)
         {
             Node head = null;
             Node tail = null;
@@ -73,7 +68,7 @@ namespace DataStructure.LinkedList
             return head;
         }
 
-        public void traversal(Node head)
+        public void Traversal(Node head)
         {
             Node tNode = head;
             if (tNode == null)
@@ -101,9 +96,9 @@ namespace DataStructure.LinkedList
             head2.next.next = new Node(9);
             head2.next.next.next = new Node(11);
 
-            Node finalNode = mergeTwoSortedLinkedLists.mergeTwoSortedNodes(head1, head2);
+            Node finalNode = mergeTwoSortedLinkedLists.MergeTwoSortedNodes(head1, head2);
             Console.WriteLine("Merged Linked List is: ");
-            mergeTwoSortedLinkedLists.traversal(finalNode);
+            mergeTwoSortedLinkedLists.Traversal(finalNode);
         }
 
     }

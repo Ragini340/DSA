@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-
-namespace DataStructure.LinkedList
+﻿namespace DataStructure.LinkedList
 {
     public class Node1
     {
@@ -22,7 +13,7 @@ namespace DataStructure.LinkedList
 
     public class IntersectionOfTwoSingleLinkedLists
     {
-        public void print(Node1 node1)
+        public void Print(Node1 node1)
         {
             while (node1 != null)
             {
@@ -34,7 +25,7 @@ namespace DataStructure.LinkedList
         //Method1: Using Hashset
         /*Time complexity: O(M + N), where M and N are the lengths of the two lists.
         Space complexity: O(M + N)*/
-        public void findPointOfIntersectionUsingHashSet(Node1 node11, Node1 node12)
+        public void FindPointOfIntersectionUsingHashSet(Node1 node11, Node1 node12)
         {
             HashSet<Node1> nodelist = new HashSet<Node1>();
             while (node11 != null)
@@ -57,7 +48,7 @@ namespace DataStructure.LinkedList
         //Method2
         /*Time Complexity: O(M* N), where M and N are number of nodes in the two linked list.
         Space Complexity: O(1)*/
-        public static int findPointOfIntersectionMethod2(Node1 node11, Node1 node12)
+        public static int FindPointOfIntersectionMethod2(Node1 node11, Node1 node12)
         {
             int pointOfIntersection = 0;
 
@@ -95,14 +86,14 @@ namespace DataStructure.LinkedList
 
             IntersectionOfTwoSingleLinkedLists intersectionOfTwoSingleLinkedLists = new IntersectionOfTwoSingleLinkedLists();
             Console.WriteLine("Node11 list's elements are: ");
-            intersectionOfTwoSingleLinkedLists.print(node11);
+            intersectionOfTwoSingleLinkedLists.Print(node11);
             Console.WriteLine("Node12 list's elements are: ");
-            intersectionOfTwoSingleLinkedLists.print(node12);
+            intersectionOfTwoSingleLinkedLists.Print(node12);
 
-            intersectionOfTwoSingleLinkedLists.findPointOfIntersectionUsingHashSet(node11, node12);
+            intersectionOfTwoSingleLinkedLists.FindPointOfIntersectionUsingHashSet(node11, node12);
             Console.WriteLine();
 
-            int insertNode1 = IntersectionOfTwoSingleLinkedLists.findPointOfIntersectionMethod2(node11, node12);
+            int insertNode1 = IntersectionOfTwoSingleLinkedLists.FindPointOfIntersectionMethod2(node11, node12);
             Console.WriteLine("Point of intersection is using Method2: " + insertNode1);
         }
 

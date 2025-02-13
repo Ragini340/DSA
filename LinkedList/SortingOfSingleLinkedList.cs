@@ -1,31 +1,26 @@
 ﻿using DataStructure.Linkedlist;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStructure.LinkedList
 {
     public class SortingOfSingleLinkedList
     {
-        Node sortList(Node node)
+        Node SortList(Node node)
         {
             if(node == null || node.next == null)
             {
                 return node;
             }
 
-            Node middleNode = getMiddleNode(node);
+            Node middleNode = GetMiddleNode(node);
             Node head1 = node;
             Node head2 = middleNode.next;
             middleNode.next = null;
-            Node h1 = sortList(head1);
-            Node h2 = sortList(head2);
-            return mergeSortedList(h1, h2);
+            Node h1 = SortList(head1);
+            Node h2 = SortList(head2);
+            return MergeSortedList(h1, h2);
         }
 
-        private Node mergeSortedList(Node node1, Node node2)
+        private Node MergeSortedList(Node node1, Node node2)
         {
             Node head = null;
             Node t1 = null;
@@ -88,7 +83,7 @@ namespace DataStructure.LinkedList
             return head;
         }
 
-        public Node getMiddleNode(Node head)
+        public Node GetMiddleNode(Node head)
         {
             if(head == null)
             {
@@ -111,7 +106,7 @@ namespace DataStructure.LinkedList
             return slow;
         }
 
-        public void traversal(Node head)
+        public void Traversal(Node head)
         {
             Node tNode = head;
             if(tNode == null)
@@ -138,8 +133,8 @@ namespace DataStructure.LinkedList
             head.next.next.next.next.next.next = new Node(11);
 
             SortingOfSingleLinkedList sortingOfSingleLinkedList = new SortingOfSingleLinkedList();
-            Node node = sortingOfSingleLinkedList.sortList(head);
-            sortingOfSingleLinkedList.traversal(node);
+            Node node = sortingOfSingleLinkedList.SortList(head);
+            sortingOfSingleLinkedList.Traversal(node);
         }
     }
 }

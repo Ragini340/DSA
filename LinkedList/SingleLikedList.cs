@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.Linkedlist
+﻿namespace DataStructure.Linkedlist
 {
     public class Node
     {
@@ -26,7 +20,7 @@ namespace DataStructure.Linkedlist
          * Time Complexity: O(1)
          * Space Complexity: O(1)
         */
-        public void inSertAtBeginning(int element)
+        public void InSertAtBeginning(int element)
         {
             Node node = new Node(element);
             node.next = head;
@@ -37,7 +31,7 @@ namespace DataStructure.Linkedlist
          * Time Complexity: O(N)
          * Space Complexity: O(1)
         */
-        public void insertNodeAtEnd(int element)
+        public void InsertNodeAtEnd(int element)
         {
             Node node = new Node(element);
             if (head == null)
@@ -57,7 +51,7 @@ namespace DataStructure.Linkedlist
 
         /*Case3: Insert node before a node
         */
-        public void insertNodeBeforeANode(int element, int item)
+        public void InsertNodeBeforeANode(int element, int item)
         {
             Node node = new Node(element);
             Node last = head;
@@ -93,7 +87,7 @@ namespace DataStructure.Linkedlist
 
         /*Case4: Insert node before last node
        */
-        public void insertNodeAfterANode(int element, int item)
+        public void InsertNodeAfterANode(int element, int item)
         {
             Node node = new Node(element);
             Node last = head;
@@ -128,23 +122,23 @@ namespace DataStructure.Linkedlist
         }
 
         /*Case5: Reverse a LinkedList*/
-        public void reverseLinkedList()
+        public void ReverseLinkedList()
         {
             Node temp = head;
-            printReverse(temp);
+            PrintReverse(temp);
         }
 
-        private void printReverse(Node temp)
+        private void PrintReverse(Node temp)
         {
             if(temp == null)
             {
                 return;
             }
-            printReverse(temp.next);
+            PrintReverse(temp.next);
             Console.WriteLine(" " + temp.data);
         }
 
-        public void reverse()
+        public void Reverse()
         {
             if(head == null)
             {
@@ -163,7 +157,7 @@ namespace DataStructure.Linkedlist
             head = prev;
         }
 
-        public void traversal()
+        public void Traversal()
         {
             Node tNode = head;
             if (tNode == null)

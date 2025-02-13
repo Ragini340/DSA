@@ -1,17 +1,11 @@
 ﻿using DataStructure.Linkedlist;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStructure.LinkedList
 {
     public class CheckIfLoopIsFoundInSingleLinkedList
     {
         /*Case1: To check if there is a loop found in the single linked list*/
-        public bool findLoopInLinkedList(Node head)
+        public bool FindLoopInLinkedList(Node head)
         {
             Node slow = head;
             Node fast = head;
@@ -30,7 +24,7 @@ namespace DataStructure.LinkedList
         }
 
         /*Case2: To find start point of a loop*/
-        public Node findStartPointOfALoop(Node head)
+        public Node FindStartPointOfALoop(Node head)
         {
             Node slow = head;
             Node fast = head;
@@ -91,11 +85,11 @@ namespace DataStructure.LinkedList
          
             //Case1: To check if there is a loop found in the single linked list
             CheckIfLoopIsFoundInSingleLinkedList checkIfLoopIsFoundInSingleLinkedList = new CheckIfLoopIsFoundInSingleLinkedList();
-            bool isLoopFound = checkIfLoopIsFoundInSingleLinkedList.findLoopInLinkedList(head);
+            bool isLoopFound = checkIfLoopIsFoundInSingleLinkedList.FindLoopInLinkedList(head);
             Console.WriteLine("Is loop found in list ?" + isLoopFound);
 
             //Case2: To find start point of a loop
-            Node startLoop = checkIfLoopIsFoundInSingleLinkedList.findStartPointOfALoop(head);
+            Node startLoop = checkIfLoopIsFoundInSingleLinkedList.FindStartPointOfALoop(head);
             if (startLoop != null)
             {
                 Console.WriteLine("Loop start node " + startLoop.data);

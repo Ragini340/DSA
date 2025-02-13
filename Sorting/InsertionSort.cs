@@ -2,7 +2,7 @@
 {
     public class InsertionSort
     {
-        public static void insertionSort(int[] arr)
+        public static void InsertionSorts(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
@@ -26,7 +26,7 @@
         {
             int[] insertionSortArr = { 1, 3, 2, 6, 8, 10, 9, 5 };
             Console.WriteLine("Insertion sorting: ");
-            InsertionSort.insertionSort(insertionSortArr);
+            InsertionSort.InsertionSorts(insertionSortArr);
         }
 
     }

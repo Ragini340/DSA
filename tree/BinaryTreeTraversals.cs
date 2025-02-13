@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.tree
+﻿namespace DataStructure.tree
 {
     public class Node
     {
@@ -22,36 +16,36 @@ namespace DataStructure.tree
     Auxiliary Space: If we do not consider the size of the stack for function calls then O(1) otherwise O(h) where h is the height of the tree.*/
     public class BinaryTreeTraversals
     {
-        public static void preorder(Node root)
+        public static void Preorder(Node root)
         {
             if (root == null)
             {
                 return;
             }
             Console.WriteLine(root.data + " ");
-            preorder(root.left);
-            preorder(root.right);
+            Preorder(root.left);
+            Preorder(root.right);
         }
 
-        public static void inorder(Node root)
+        public static void Inorder(Node root)
         {
             if (root == null)
             {
                 return;
             }
-            inorder(root.left);
+            Inorder(root.left);
             Console.WriteLine(root.data + " ");
-            inorder(root.right);
+            Inorder(root.right);
         }
 
-        public static void postorder(Node root)
+        public static void Postorder(Node root)
         {
             if (root == null)
             {
                 return;
             }
-            postorder(root.left);
-            postorder(root.right);
+            Postorder(root.left);
+            Postorder(root.right);
             Console.WriteLine(root.data + " ");
         }
 

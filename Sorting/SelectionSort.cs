@@ -6,7 +6,7 @@
     */
     public class SelectionSort
     {
-        public static void selectionSort(int[] arr)
+        public static void SelectionSorts(int[] arr)
         {
             for (int i = 0; i < arr.Length - 1; i++)
             {
@@ -28,7 +28,7 @@
         }
 
         //Print sorted array
-        public static void printSortedArray(int[] arr)
+        public static void PrintSortedArray(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
             {
@@ -39,9 +39,9 @@
         public static void Main(string[] args)
         {
             int[] selectionSortArr = { 1, 5, -1, 2, 3, -4 };
-            SelectionSort.selectionSort(selectionSortArr);
+            SelectionSort.SelectionSorts(selectionSortArr);
             Console.WriteLine("Selection sorting: ");
-            SelectionSort.printSortedArray(selectionSortArr);
+            SelectionSort.PrintSortedArray(selectionSortArr);
         }
 
     }

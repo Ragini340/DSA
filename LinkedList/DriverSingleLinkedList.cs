@@ -1,9 +1,4 @@
 ﻿using DataStructure.Linkedlist;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStructure.LinkedList
 {
@@ -16,33 +11,33 @@ namespace DataStructure.LinkedList
             Console.WriteLine("Insert node at beginning: ");
             for (int i = 5; i >=0 ; i--)
             {
-                singleLikedList.inSertAtBeginning(i);
+                singleLikedList.InSertAtBeginning(i);
             }
-            singleLikedList.traversal();
+            singleLikedList.Traversal();
             Console.WriteLine();
 
             //Case2: Insert node at end
             Console.WriteLine("Insert node at end: ");
-            singleLikedList.insertNodeAtEnd(6);
-            singleLikedList.traversal();
+            singleLikedList.InsertNodeAtEnd(6);
+            singleLikedList.Traversal();
             Console.WriteLine();
 
             //Case3: Insert node before a node
             Console.WriteLine("Insert node before a node: ");
-            singleLikedList.insertNodeBeforeANode(99, 5);
-            singleLikedList.traversal();
+            singleLikedList.InsertNodeBeforeANode(99, 5);
+            singleLikedList.Traversal();
             Console.WriteLine();
 
             //Case4: Insert node before last node
             Console.WriteLine("Insert node after a node: ");
-            singleLikedList.insertNodeBeforeANode(100, 6);
-            singleLikedList.traversal();
+            singleLikedList.InsertNodeBeforeANode(100, 6);
+            singleLikedList.Traversal();
             Console.WriteLine();
 
             //Case5: Reverse a LinkedList
             Console.WriteLine("Reverse the LinkedList");
-            singleLikedList.reverse();
-            singleLikedList.traversal();
+            singleLikedList.Reverse();
+            singleLikedList.Traversal();
             Console.WriteLine();
         }
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure.tree
+﻿namespace DataStructure.tree
 {
     /*
     Time Complexity: O(n), where n is the number of nodes in the binary tree as each node is visited once.
@@ -12,14 +6,14 @@ namespace DataStructure.tree
     //Output:- Tree height is: 2
     public class HeightOfTree
     {
-        public static int treeHeight(Node root)
+        public static int TreeHeight(Node root)
         {
             if (root == null)
             {
                 return -1;
             }
-            int leftSubTreeHeight = treeHeight(root.left);
-            int rightSubTreeHeight = treeHeight(root.right);
+            int leftSubTreeHeight = TreeHeight(root.left);
+            int rightSubTreeHeight = TreeHeight(root.right);
             return Math.Max(leftSubTreeHeight, rightSubTreeHeight) + 1;
         }
 
