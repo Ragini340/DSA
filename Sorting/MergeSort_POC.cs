@@ -56,7 +56,7 @@
 
         public static void Main(string[] args)
         {
-            int[] arr = { 38, 27, 43, 3, 9, 82, 10 };
+           /* int[] arr = { 38, 27, 43, 3, 9, 82, 10 };
             Console.WriteLine("Before Merge Sort:");
             foreach (int item in arr)
             {
@@ -64,6 +64,24 @@
             }
 
             Console.WriteLine("\nAfter Merge Sort:");
+            MergeSort(arr);
+            foreach (int item in arr)
+            {
+                Console.Write(item + " ");
+            }*/
+
+            //Taking array elements from console
+            Console.WriteLine("Enter the array length: ");
+            int length = int.Parse(Console.ReadLine());
+            int[] arr = new int[length];
+            Console.WriteLine("Elements of array are:-");
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write("Array element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("\nArray elements after using Merge Sort:");
             MergeSort(arr);
             foreach (int item in arr)
             {
