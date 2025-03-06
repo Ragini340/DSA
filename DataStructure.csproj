@@ -5,7 +5,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DataStructure.LinkedList.IntersectionOfTwoSingleLinkedLists</StartupObject>
+	  
+    <!--<StartupObject>DataStructure.LinkedList.IntersectionOfTwoSingleLinkedLists</StartupObject>-->
+	<StartupObject>DataStructure.Sorting.MergeSort_POC</StartupObject>
+	  
   </PropertyGroup>
 
 </Project>
