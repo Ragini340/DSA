@@ -7,7 +7,18 @@
     <Nullable>enable</Nullable>
 	  
     <!--<StartupObject>DataStructure.LinkedList.IntersectionOfTwoSingleLinkedLists</StartupObject>-->
-	<StartupObject>DataStructure.Sorting.MergeSort_POC</StartupObject>
+	<!--<StartupObject>DataStructure.Sorting.MergeSort_POC</StartupObject>-->
+	<!--<StartupObject>DataStructure.LinkedList.RemoveAnElementFromCircularLinkedList</StartupObject>-->
+	<!--<StartupObject>DataStructure.tree.MirrorBinaryTreeWithoutRecursion</StartupObject>-->
+	<!--<StartupObject>DataStructure.Array.GenerateAllSubArrays</StartupObject>-->
+    <!--<StartupObject>DataStructure.Stack.NearestSmallerElementToLeft</StartupObject>-->
+    <!--<StartupObject>DataStructure.Stack.NearestLeftSmallerElementUsingStack</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.NearestSmallerElementToRight</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.NearestSmallerElementToRight_UsingLeftToRightIteration</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.NearestSmallerUsingBruteForce</StartupObject>-->
+    <!--<StartupObject>DataStructure.Stack.NearestSmallerElementToLeft</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.NearestGreaterElementToLeft</StartupObject>-->
+    <StartupObject>DataStructure.Stack.NearestGreaterElementToRight</StartupObject>
 	  
   </PropertyGroup>
 

@@ -8,7 +8,7 @@
      Time Complexity: O(n) 
      Space Complexity: O(n)
     */
-    public class NearestSmallerElementUsingStack
+    public class NearestLeftSmallerElementUsingStack
     {
         public static List<int> NearestSmallerElement(List<int> inputList)
         {

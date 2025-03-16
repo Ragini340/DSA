@@ -8,7 +8,7 @@
      Time Complexity: O(N^2) 
      Space Complexity: O(1)
     */
-    public class NearestSmallerElement
+    public class NearestSmallerElementToLeft
     {
         public static List<int> NearestSmallerUsingBruteForce(List<int> inputList)
         {
