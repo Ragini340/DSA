@@ -1,4 +1,4 @@
-﻿namespace DataStructure.tree
+﻿namespace DataStructure.Tree
 {
     /*
     Time Complexity: O(n), where n is the number of nodes in the binary tree as each node is visited once.

@@ -1,4 +1,4 @@
-﻿namespace DataStructure.tree
+﻿namespace DataStructure.Tree
 {
     /*Time complexity: O(N),where N is the number of nodes in given binary tree.
     Auxiliary Space: O(h), where h is the height of the tree.*/

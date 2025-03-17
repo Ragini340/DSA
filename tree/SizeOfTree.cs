@@ -1,4 +1,4 @@
-﻿namespace DataStructure.tree
+﻿namespace DataStructure.Tree
 {
     public class SizeOfTree
     {
