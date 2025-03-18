@@ -15,9 +15,6 @@
 
     public class BinarySearchTree
     {
-        bool isBSTree;
-        TreeNode prev = null;
-        TreeNode current = null;
         public static int COUNT = 0;
         public static TreeNode SMALLEST_NODE;
 
