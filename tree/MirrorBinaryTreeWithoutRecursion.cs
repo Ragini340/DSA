@@ -2,7 +2,7 @@
 {
     public class MirrorBinaryTreeWithoutRecursion
     {
-        public TreeNode MirrorTree(TreeNode root)
+        public Node MirrorTree(Node root)
         {
             if (root == null)
             {
@@ -10,13 +10,13 @@
             }
 
             //Using a queue for level-order traversal
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<Node> queue = new Queue<Node>();
             queue.Enqueue(root);
 
             while (queue.Count > 0)
             {
-                TreeNode currentNode = queue.Dequeue();
-                TreeNode temp = currentNode.left;
+                Node currentNode = queue.Dequeue();
+                Node temp = currentNode.left;
                 currentNode.left = currentNode.right;
                 currentNode.right = temp;
 
@@ -33,7 +33,7 @@
             return root;
         }
 
-        public void InOrderTraversal(TreeNode node)
+        public void InOrderTraversal(Node node)
         {
             if (node == null)
             {
@@ -47,13 +47,13 @@
 
         public static void Main(string[] args)
         {
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-            root.right.left = new TreeNode(6);
-            root.right.right = new TreeNode(7);
+            Node root = new Node(1);
+            root.left = new Node(2);
+            root.right = new Node(3);
+            root.left.left = new Node(4);
+            root.left.right = new Node(5);
+            root.right.left = new Node(6);
+            root.right.right = new Node(7);
 
             MirrorBinaryTreeWithoutRecursion tree = new MirrorBinaryTreeWithoutRecursion();
             Console.WriteLine("Original tree (In-order traversal): ");

@@ -9,7 +9,7 @@
     <!--<StartupObject>DataStructure.LinkedList.IntersectionOfTwoSingleLinkedLists</StartupObject>-->
 	<!--<StartupObject>DataStructure.Sorting.MergeSort_POC</StartupObject>-->
 	<!--<StartupObject>DataStructure.LinkedList.RemoveAnElementFromCircularLinkedList</StartupObject>-->
-	<!--<StartupObject>DataStructure.tree.MirrorBinaryTreeWithoutRecursion</StartupObject>-->
+	<!--<StartupObject>DataStructure.Tree.MirrorBinaryTreeWithoutRecursion</StartupObject>-->
 	<!--<StartupObject>DataStructure.Array.GenerateAllSubArrays</StartupObject>-->
     <!--<StartupObject>DataStructure.Stack.NearestSmallerElementToLeft</StartupObject>-->
     <!--<StartupObject>DataStructure.Stack.NearestLeftSmallerElementUsingStack</StartupObject>-->
@@ -18,7 +18,10 @@
 	<!--<StartupObject>DataStructure.Stack.NearestSmallerUsingBruteForce</StartupObject>-->
     <!--<StartupObject>DataStructure.Stack.NearestSmallerElementToLeft</StartupObject>-->
 	<!--<StartupObject>DataStructure.Stack.NearestGreaterElementToLeft</StartupObject>-->
-    <StartupObject>DataStructure.Stack.NearestGreaterElementToRight</StartupObject>
+    <!--<StartupObject>DataStructure.Stack.NearestGreaterElementToRight</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.RightSmallerElementUsingStack</StartupObject>-->
+	<!--<StartupObject>DataStructure.Stack.LargestAreaOfRectangleInHistogram</StartupObject>-->
+	<StartupObject>DataStructure.Tree.BinarySearchTree</StartupObject>
 	  
   </PropertyGroup>
 
