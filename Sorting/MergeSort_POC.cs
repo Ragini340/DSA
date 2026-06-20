@@ -1,5 +1,27 @@
 ﻿namespace DataStructure.Sorting
 {
+/*
+Merge Sort is a Divide and Conquer algorithm:
+Divide the array into two halves.
+Recursively sort each half.
+Merge the sorted halves into one sorted array.
+*/
+
+/*
+Time Complexity (TC):
+Best Case    : O(n log n)
+Average Case : O(n log n)
+Worst Case   : O(n log n)
+Reason:
+- The array is divided into 2 halves recursively, creating log n levels.
+- At each level, merging all elements takes O(n) time.
+- Therefore, total time complexity = O(n) × O(log n) = O(n log n).
+
+Space Complexity (SC): O(n)
+Reason:
+- Additional arrays (left[] and right[]) are created during the merge process.
+- Total extra space required is proportional to the number of elements in the array.
+*/
     public class MergeSort_POC
     {
         public static void MergeSort(int[] arr)
@@ -56,19 +78,19 @@
 
         public static void Main(string[] args)
         {
-           /* int[] arr = { 38, 27, 43, 3, 9, 82, 10 };
-            Console.WriteLine("Before Merge Sort:");
-            foreach (int item in arr)
-            {
-                Console.Write(item + " ");
-            }
+            /* int[] arr = { 38, 27, 43, 3, 9, 82, 10 };
+             Console.WriteLine("Before Merge Sort:");
+             foreach (int item in arr)
+             {
+                 Console.Write(item + " ");
+             }
 
-            Console.WriteLine("\nAfter Merge Sort:");
-            MergeSort(arr);
-            foreach (int item in arr)
-            {
-                Console.Write(item + " ");
-            }*/
+             Console.WriteLine("\nAfter Merge Sort:");
+             MergeSort(arr);
+             foreach (int item in arr)
+             {
+                 Console.Write(item + " ");
+             }*/
 
             //Taking array elements from console
             Console.WriteLine("Enter the array length: ");
@@ -88,6 +110,33 @@
                 Console.Write(item + " ");
             }
         }
+
+        /*
+         [38,27,43,3,9,82,10]
+         |
+    ----------------
+    |              |
+[38,27,43]   [3,9,82,10]
+    |              |
+ ------         -------
+ |    |         |     |
+[38] [27,43] [3,9] [82,10]
+      |        |      |
+    [27][43] [3][9] [82][10]
+
+Merge Upward
+
+[27][43] -> [27,43]
+[38]+[27,43] -> [27,38,43]
+
+[82][10] -> [10,82]
+[3][9] -> [3,9]
+[3,9]+[10,82] -> [3,9,10,82]
+
+Final:
+[27,38,43] + [3,9,10,82]
+= [3,9,10,27,38,43,82]
+         */
 
     }
 }
