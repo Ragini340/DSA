@@ -5,6 +5,17 @@
        You have been given ‘K’ different arrays/lists, which are sorted individually (in ascending order). 
        You need to merge all the given arrays/list such that the output array/list should be sorted in ascending order.
     */
+
+    /*
+    Time Complexity: O(N × K)
+    Where:
+    N = total number of elements across all arrays
+    K = number of sorted arrays
+    The algorithm repeatedly merges the current result with the next array. Since the merged array grows after every step, the total work becomes O(N × K).
+
+    Space Complexity: O(N)
+    A temporary merged array is created during each merge operation, and the maximum extra space required is proportional to the total number of elements.
+    */
     public class MergeKSortedArrays
     {
         public static int[] MergeSortedArrays(int[][] arr)
