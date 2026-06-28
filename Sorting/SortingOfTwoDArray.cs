@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace DataStructure.Sorting
+﻿namespace DataStructure.Sorting
 {
     /*
      Merge 2-dimensional sorted arrays into one 1-Dimesional output array and sort the output array using any sorting algorithm.
