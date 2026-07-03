@@ -68,3 +68,114 @@ namespace DataStructure.DynamicProgramming
         }
     }
 }
+/*
+Call:
+ClimbStairs(5)
+
+Since n = 5 (> 2), execution continues.
+
+----------------------------------------------------
+Initial Values
+----------------------------------------------------
+first  = 1   // Ways to reach stair 1
+second = 2   // Ways to reach stair 2
+
+Loop:
+for (int i = 3; i <= 5; i++)
+
+----------------------------------------------------
+Iteration 1 (i = 3)
+----------------------------------------------------
+Before:
+first  = 1
+second = 2
+
+third = first + second
+      = 1 + 2
+      = 3
+
+Update:
+first  = second = 2
+second = third  = 3
+
+Current values:
+first  = 2
+second = 3
+
+Meaning:
+Ways to reach stair 3 = 3
+
+----------------------------------------------------
+Iteration 2 (i = 4)
+----------------------------------------------------
+Before:
+first  = 2
+second = 3
+
+third = first + second
+      = 2 + 3
+      = 5
+
+Update:
+first  = second = 3
+second = third  = 5
+
+Current values:
+first  = 3
+second = 5
+
+Meaning:
+Ways to reach stair 4 = 5
+
+----------------------------------------------------
+Iteration 3 (i = 5)
+----------------------------------------------------
+Before:
+first  = 3
+second = 5
+
+third = first + second
+      = 3 + 5
+      = 8
+
+Update:
+first  = second = 5
+second = third  = 8
+
+Current values:
+first  = 5
+second = 8
+
+Meaning:
+Ways to reach stair 5 = 8
+
+----------------------------------------------------
+Loop Ends
+----------------------------------------------------
+
+Return:
+return second;
+
+return 8;
+
+Output:
+8
+
++-----------+-------+--------+-------+--------------+---------------+
+| Iteration | first | second | third | first (after)| second (after)|
++-----------+-------+--------+-------+--------------+---------------+
+| Initial   |   1   |   2    |   -   |      1       |       2       |
+| i = 3     |   1   |   2    |   3   |      2       |       3       |
+| i = 4     |   2   |   3    |   5   |      3       |       5       |
+| i = 5     |   3   |   5    |   8   |      5       |       8       |
++-----------+-------+--------+-------+--------------+---------------+
+
+Sequence of ways:
+Stair 1 → 1
+Stair 2 → 2
+Stair 3 → 3
+Stair 4 → 5
+Stair 5 → 8
+
+Final Answer = 8
+*/
