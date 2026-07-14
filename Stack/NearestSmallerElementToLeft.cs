@@ -43,3 +43,18 @@
 
     }
 }
+/*
+ Input Array: 4, 6, 10, 11, 7, 6, 3, 5
+
+Index   Element Searching Left Side        Nearest Smaller
+0       4       No element                 -1
+1       6       4                          Found: 4
+2       10      6                          Found: 6
+3       11      10                         Found: 10
+4       7       11 10 6                    Found: 6
+5       6       7 11 10 6 4                Found: 4
+6       3       6 6 7 11 10 6 4            No smaller element found
+7       5       3                          Found: 3
+
+Final Result: -1, 4, 6, 10, 6, 4, -1, 3
+ */
