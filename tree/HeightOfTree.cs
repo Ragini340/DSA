@@ -23,3 +23,156 @@
 
     }
 }
+/*
+        1
+       / \
+      2   3
+     /
+    4
+
+Expected Output:
+Tree height is: 2
+
+Call:
+TreeHeight(1)
+
+Step 1:
+root = 1
+leftSubTreeHeight = TreeHeight(2)
+
+---------------------------------------------------------
+
+TreeHeight(2)
+
+root = 2
+leftSubTreeHeight = TreeHeight(4)
+
+---------------------------------------------------------
+
+TreeHeight(4)
+
+root = 4
+
+leftSubTreeHeight = TreeHeight(null)
+= -1
+
+rightSubTreeHeight = TreeHeight(null)
+= -1
+
+Return:
+Math.Max(-1, -1) + 1
+= -1 + 1
+= 0
+
+TreeHeight(4) returns 0
+
+---------------------------------------------------------
+
+Back to TreeHeight(2)
+
+leftSubTreeHeight = 0
+
+rightSubTreeHeight = TreeHeight(null)
+= -1
+
+Return:
+Math.Max(0, -1) + 1
+= 0 + 1
+= 1
+
+TreeHeight(2) returns 1
+
+---------------------------------------------------------
+
+Back to TreeHeight(1)
+
+leftSubTreeHeight = 1
+
+rightSubTreeHeight = TreeHeight(3)
+
+---------------------------------------------------------
+
+TreeHeight(3)
+
+root = 3
+
+leftSubTreeHeight = TreeHeight(null)
+= -1
+
+rightSubTreeHeight = TreeHeight(null)
+= -1
+
+Return:
+Math.Max(-1, -1) + 1
+= -1 + 1
+= 0
+
+TreeHeight(3) returns 0
+
+---------------------------------------------------------
+
+Back to TreeHeight(1)
+
+leftSubTreeHeight = 1
+rightSubTreeHeight = 0
+
+Return:
+Math.Max(1, 0) + 1
+= 1 + 1
+= 2
+
+TreeHeight(1) returns 2
+
+---------------------------------------------------------
+Call Stack Summary
+---------------------------------------------------------
+
+TreeHeight(4)
+= Max(-1, -1) + 1
+= 0
+
+TreeHeight(2)
+= Max(0, -1) + 1
+= 1
+
+TreeHeight(3)
+= Max(-1, -1) + 1
+= 0
+
+TreeHeight(1)
+= Max(1, 0) + 1
+= 2
+
+---------------------------------------------------------
+Recursion Tree
+---------------------------------------------------------
+
+TreeHeight(1)
+│
+├── TreeHeight(2)
+│   ├── TreeHeight(4)
+│   │   ├── TreeHeight(null) = -1
+│   │   └── TreeHeight(null) = -1
+│   │   Return 0
+│   │
+│   └── TreeHeight(null) = -1
+│
+│   Return 1
+│
+└── TreeHeight(3)
+    ├── TreeHeight(null) = -1
+    └── TreeHeight(null) = -1
+
+    Return 0
+
+Final:
+TreeHeight(1)
+= Max(1, 0) + 1
+= 2
+
+---------------------------------------------------------
+Output
+---------------------------------------------------------
+
+Tree height is: 2
+ */
