@@ -18,3 +18,55 @@
 
     }
 }
+/*
+   Consider the following tree:
+
+            1
+           / \
+          2   3
+         / \
+        4   5
+
+   Step 1:
+   TreeSize(1)
+   → Calls TreeSize(2)
+   → Calls TreeSize(3)
+
+   Step 2:
+   TreeSize(2)
+   → Calls TreeSize(4)
+   → Calls TreeSize(5)
+
+   Step 3:
+   TreeSize(4)
+   → Left = 0 (null)
+   → Right = 0 (null)
+   → Returns 1
+
+   Step 4:
+   TreeSize(5)
+   → Left = 0 (null)
+   → Right = 0 (null)
+   → Returns 1
+
+   Step 5:
+   TreeSize(2)
+   → Left = 1
+   → Right = 1
+   → Returns 1 + 1 + 1 = 3
+
+   Step 6:
+   TreeSize(3)
+   → Left = 0 (null)
+   → Right = 0 (null)
+   → Returns 1
+
+   Step 7:
+   TreeSize(1)
+   → Left = 3
+   → Right = 1
+   → Returns 3 + 1 + 1 = 5
+
+   Final Output:
+   Tree size is: 5
+*/
