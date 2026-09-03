@@ -6,6 +6,22 @@ using System.Threading.Tasks;
 
 namespace DataStructure.BinarySearch
 {
+    /*Given a sorted array and a target value, find the index of the target using Binary Search. Return -1 if it does not exist.*/
+    /*
+    Time Complexity (TC):
+    O(log n)
+
+    Explanation:
+    In every iteration, Binary Search cuts the search space approximately in half.
+    Therefore, for n elements, the maximum number of iterations is log2(n).
+
+    Space Complexity (SC):
+    O(1)
+
+    Explanation:
+    We only use a few variables (left, right, middle, result).
+    No additional data structures are used.
+*/
     public class BinarySearch
     {
         public static int Search(int[] numbers, int target)
