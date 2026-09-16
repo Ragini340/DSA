@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructure.Array
+namespace DataStructure.Arrays
 {
     /*Find two numbers whose sum equals the target.*/
 

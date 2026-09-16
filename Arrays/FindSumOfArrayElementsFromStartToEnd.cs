@@ -1,4 +1,4 @@
-﻿namespace DataStructure.Array
+﻿namespace DataStructure.Arrays
 {
     /*
     Given an array and multiple queries, where each query contains a start index and an end index, find the sum of elements between those indices (inclusive).
